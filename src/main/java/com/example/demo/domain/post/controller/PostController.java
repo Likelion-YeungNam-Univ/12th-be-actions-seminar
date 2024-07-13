@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 public class PostController {
     private final PostService postService;
 
+    // 게시글 작성 API
     @PostMapping("")
     @Operation(summary = "게시글 작성", description = "게시글을 작성합니다.")
     @ApiResponses(value = {
